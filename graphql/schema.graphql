@@ -1,9 +1,11 @@
-type Seonu {
+type Person {
   id: Int!
   name: String!
-  userName: String!
+  age: Int!
+  gender: String!
 }
 
 type Query {
-  person: Seonu!
+  people: [Person]!
+  person(id: Int!): Person
 }

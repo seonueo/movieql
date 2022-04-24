@@ -1,12 +1,9 @@
-const Seonu = {
-  id: 1,
-  name: 'seonu',
-  userName: 'seonueo',
-};
+import { people, getById } from './db';
 
 const resolvers = {
   Query: {
-    person: () => Seonu,
+    people: () => people,
+    person: (_, { id }) => getById(id),
   },
 };
 
