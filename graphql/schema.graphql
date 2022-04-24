@@ -1,0 +1,9 @@
+type Seonu {
+  id: Int!
+  name: String!
+  userName: String!
+}
+
+type Query {
+  person: Seonu!
+}
